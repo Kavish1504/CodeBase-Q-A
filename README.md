@@ -1,6 +1,7 @@
 # 🧠 Codebase Q&A Tool
 
 > Ask natural-language questions about any GitHub repository and get grounded answers with exact file paths and line numbers — powered by LangChain, Groq, and ChromaDB.
+
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![LangChain](https://img.shields.io/badge/LangChain-0.3-green)
 ![Groq](https://img.shields.io/badge/Groq-LLaMA3.3-orange)
@@ -101,7 +102,7 @@ codebase-qa/
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/Kavish1504/codebase-qa
+git clone https://github.com/Kavish1504/CodeBase-Q-A
 cd codebase-qa
 conda create -n codebase-qa python=3.11
 conda activate codebase-qa

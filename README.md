@@ -1,6 +1,11 @@
 # 🧠 Codebase Q&A Tool
 
 > Ask natural-language questions about any GitHub repository and get grounded answers with exact file paths and line numbers — powered by LangChain, Groq, and ChromaDB.
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![LangChain](https://img.shields.io/badge/LangChain-0.3-green)
+![Groq](https://img.shields.io/badge/Groq-LLaMA3.3-orange)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-0.5-red)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.40-ff4b4b)
 
 ---
 
@@ -153,7 +158,7 @@ curl -X POST http://localhost:8000/ask \
 ## 📊 Evaluation (RAGAS)
 
 ```bash
-python -m evaluation.ragas_eval --repo-url https://github.com/tiangolo/fastapi
+python -m evaluation.ragas_eval --repo_url https://github.com/tiangolo/fastapi
 # Results saved to evaluation/results.json
 ```
 

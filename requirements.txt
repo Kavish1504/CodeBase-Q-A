@@ -9,7 +9,9 @@ langchain-huggingface==0.1.2
 loguru==0.7.2
 cohere==5.11.3
 langchain_core
-fastapi==0.115.5
+fastapi==0.115.12
 uvicorn==0.32.1
 ragas==0.2.6
 datasets==3.1.0
+streamlit==1.45.1
+starlette==0.46.2

@@ -98,7 +98,7 @@ with st.sidebar:
             st.session_state.messages = []
             qa = _get_qa()
             if qa is not None:
-                qa.reset_memory()
+                qa.clear_memory()
             st.rerun()
 
     st.divider()

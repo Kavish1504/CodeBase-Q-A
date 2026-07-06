@@ -36,7 +36,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-def _getqa()->CodebaseQA|None:
+def _get_qa()->CodebaseQA|None:
     return st.session_state.get("qa_instance")
 
 def _get_messages()->list[dict]:
@@ -95,8 +95,8 @@ with st.sidebar:
 
         if st.button("Clear Chat",use_container_width=True):
             st.session_state.messages=[]
-            if _getqa():
-                _getqa().reset_memory()
+            if _get_qa():
+                _get_qa().reset_memory()
             st.rerun()
 
     st.divider()
@@ -116,7 +116,7 @@ with st.sidebar:
 
 st.header("💬 Chat with Your Codebase")
 messages=_get_messages()
-qa=_getqa()
+qa=_get_qa()
 
 
 if not qa:

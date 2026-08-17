@@ -45,7 +45,7 @@ class CodebaseQA:
             memory_window:int=5,
             use_reranker:bool=True,
             temperature:float=0.0,
-            model="llama3-70b-8192")->None:
+            model="openai/gpt-oss-20b")->None:
         
         self.retriever=retriever
         self.use_reranker=use_reranker

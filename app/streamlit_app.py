@@ -148,7 +148,11 @@ else:
 
         with st.chat_message("assistant"):
             with st.spinner("Searching codebase…"):
-                result: QAResult = qa.ask(user_input)
+                try:
+                    result: QAResult = qa.ask(user_input)
+                except Exception as e:
+                    st.error(f"Error: {type(e).__name__}: {e}")
+                    st.stop()
 
             st.markdown(result.answer)
 
